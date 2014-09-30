@@ -30,6 +30,10 @@ namespace _1DV402.S2.L1A
 
         public bool MakeGuess(int value)
         {
+            if (_count >= MaxNumberOfGuesses)
+            {
+                throw new ApplicationException();
+            }
 
         }
     }
